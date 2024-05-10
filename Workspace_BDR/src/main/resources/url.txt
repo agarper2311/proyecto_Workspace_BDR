@@ -1,0 +1,11 @@
+String url = "jdbc:mysql://localhost:3306/BD?user=root&password="
+
+Connection connection = DriverManager.getConnection(String url);
+
+Statement statement = connection.createStatement();
+
+ResultSet resulset = statement.executeQuery("SELECT * FROM alumnos");
+
+ResulSet.next() -> Mueve el puntero para leer los registros
+
+ResultSet.getString() -> Recibe el resultado del puntero
