@@ -9,3 +9,10 @@ ResultSet resulset = statement.executeQuery("SELECT * FROM alumnos");
 ResulSet.next() -> Mueve el puntero para leer los registros
 
 ResultSet.getString() -> Recibe el resultado del puntero
+
+
+while(resulset.next){
+
+    System.out.println(resulset.getString("nombre"))
+
+}
